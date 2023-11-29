@@ -1,8 +1,8 @@
-@import "../styles/mixins";
-@import "../styles/variables";
+@import "../../styles/mixins";
+@import "../../styles/variables";
 
 .banner-container{
-    height: 15vh;
+    height: 13vh;
     background-color: $bgPink;
     display: flex;
     align-items: center;
