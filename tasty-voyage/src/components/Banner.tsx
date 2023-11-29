@@ -1,21 +1,21 @@
-// Banner.tsx
-
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import './Banner.scss';
 
 const Banner = () => {
 
-  const scrollers = document.querySelectorAll(".scroller");
+  useEffect(() => {
+    const scrollers = document.querySelectorAll(".scroller");
 
-  function addAnimation(){
-    scrollers.forEach((scroller =>{
-      scroller.setAttribute("data-animated", "true")
-    }))
-  }
+    const addAnimation =() => {
+      scrollers.forEach((scroller) => {
+        (scroller as HTMLElement).setAttribute("data-animated", "true");
+      });
+    }
 
-  if(!window.matchMedia("(prefers-reduced-motion: reduce)").matches){
-    addAnimation()
-  }
+    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      addAnimation();
+    }
+  }, []);
    
 
   return (
