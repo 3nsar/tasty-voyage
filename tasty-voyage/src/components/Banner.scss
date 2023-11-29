@@ -2,7 +2,7 @@
 @import "../styles/variables";
 
 .banner-container{
-    height: 10vh;
+    height: 15vh;
     background-color: $bgPink;
     display: flex;
     align-items: center;
@@ -10,6 +10,43 @@
     p{
         color: $colorDark;
         font-size: 18px;
-        margin-right: 30px;
+        margin-right: 10px;
+        margin-left: 10px;
+        font-family: $font2;
     }
+    .banner-emoji{
+        font-size: 28px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .scroller{
+        max-width: 100%;
+        
+    }
+
+    .scroller-inner{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .scroller[data-animated= true]{
+        overflow: hidden;
+    }
+
+    .scroller[data-animated= true] .scroller-inner{
+        width: max-content;
+        flex-wrap: nowrap;
+        animation: scroll 20s linear infinite;
+    }
+
+    @keyframes scroll {
+        to{
+            transform: translate(calc(-50% - 0.5rem));
+        }
+    }
+
 }
