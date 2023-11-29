@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Rubik+Glitch&family=Vina+Sans&display=swap");
+.navbar-container p {
+  font-size: 12px;
+}
+.navbar-container .circle {
+  z-index: 1000; /* Adjust z-index as needed */
+  height: 120px;
+  width: 120px;
+  border-radius: 60px;
+  left: 0%;
+  top: 50%;
+  position: fixed;
+  background-color: #ff33cc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  font-size: 50px;
+  color: #002100;
+  background-color: #00cc00;
+}
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}/*# sourceMappingURL=Navbar.css.map */

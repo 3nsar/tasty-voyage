@@ -1,0 +1,15 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.info2-container{
+    @include info-container();
+    @include info-content();
+    background-color: $bgYellow;
+    svg{
+        margin: 0;
+    }
+
+ 
+    
+    
+}

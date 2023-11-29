@@ -1,37 +1,49 @@
-@import "../styles/mixins";
-@import "../styles/variables";
+@import "../../styles/mixins";
+@import "../../styles/variables";
 
 
 .hero-container{
     @include container();
+
     background-color: $bgDark;
     img{
         z-index: 2;
-        height: 280px;
+        height: 350px;
+    }
+
+    h1{
+        font-family: $font2;
     }
 
     .hero-text-behind{
         position: absolute;
-        top: 15%;
-        left: 33%;
+        top: 10%;
+        left: 32%;
         text-align: center;
         z-index: 1;
         color: $colorWhite;
-        font-size: 140px;
+        font-size: 180px;
         font-weight: 900;
-        
      }
 
      .hero-text-infront {
         color: $colorWhite;
         position: absolute;
-        top: 60%;
+        top: 70%;
         left: 53%;
         transform: translate(-50%, -50%);
         text-align: center;
         z-index: 3; /* Place the text in front of the image */
-        font-size: 140px;
+        font-size: 180px;
         font-weight: 900;
 
+      }
+
+      .banner-bottom {
+        position: fixed; /* or 'absolute' depending on your layout requirements */
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000; /* Adjust z-index as needed */
       }
 }

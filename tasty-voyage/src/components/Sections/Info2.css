@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Rubik+Glitch&family=Vina+Sans&display=swap");
+.info2-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #ffff99;
+}
+.info2-container svg {
+  margin: 0;
+}/*# sourceMappingURL=Info2.css.map */
