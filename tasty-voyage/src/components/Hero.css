@@ -1,0 +1,33 @@
+.hero-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #002100;
+}
+.hero-container img {
+  z-index: 2;
+  height: 280px;
+}
+.hero-container .hero-text-behind {
+  position: absolute;
+  top: 15%;
+  left: 33%;
+  text-align: center;
+  z-index: 1;
+  color: #f1f0f0;
+  font-size: 140px;
+  font-weight: 900;
+}
+.hero-container .hero-text-infront {
+  color: #f1f0f0;
+  position: absolute;
+  top: 60%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 3; /* Place the text in front of the image */
+  font-size: 140px;
+  font-weight: 900;
+}/*# sourceMappingURL=Hero.css.map */

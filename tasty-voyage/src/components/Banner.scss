@@ -1,0 +1,15 @@
+@import "../styles/mixins";
+@import "../styles/variables";
+
+.banner-container{
+    height: 10vh;
+    background-color: $bgPink;
+    display: flex;
+    align-items: center;
+
+    p{
+        color: $colorDark;
+        font-size: 18px;
+        margin-right: 30px;
+    }
+}

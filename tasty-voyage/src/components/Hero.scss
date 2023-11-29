@@ -1,0 +1,37 @@
+@import "../styles/mixins";
+@import "../styles/variables";
+
+
+.hero-container{
+    @include container();
+    background-color: $bgDark;
+    img{
+        z-index: 2;
+        height: 280px;
+    }
+
+    .hero-text-behind{
+        position: absolute;
+        top: 15%;
+        left: 33%;
+        text-align: center;
+        z-index: 1;
+        color: $colorWhite;
+        font-size: 140px;
+        font-weight: 900;
+        
+     }
+
+     .hero-text-infront {
+        color: $colorWhite;
+        position: absolute;
+        top: 60%;
+        left: 53%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 3; /* Place the text in front of the image */
+        font-size: 140px;
+        font-weight: 900;
+
+      }
+}

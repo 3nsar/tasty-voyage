@@ -1,0 +1,11 @@
+.banner-container {
+  height: 10vh;
+  background-color: #ff33cc;
+  display: flex;
+  align-items: center;
+}
+.banner-container p {
+  color: #002100;
+  font-size: 18px;
+  margin-right: 30px;
+}/*# sourceMappingURL=Banner.css.map */
