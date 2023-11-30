@@ -1,0 +1,24 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+
+.footer-container{
+    border-top: 3px solid rgba(177, 177, 177, 0.6);
+    height: 25vh;
+    background-color: $bgYellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:13vh;
+
+    p{
+        font-size: 18px;
+
+    }
+}
+
+.footer-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -16,7 +16,7 @@ const Benefits = () => {
   const columnData: ColumnData[] = [
     { imageSrc: grid1, title: "PLANT BASED",text: 'Plant-protein yuminess, suitable for everyone' },
     { imageSrc: grid2, title: "REAL INGREDIENTS",text: 'If we don´t know exactly what an ingredient is, we don´t include it' },
-    { imageSrc: grid3, title: "VERY HEALTHY",text: 'Our cuisine promotes both mental and physical well-being' },
+    { imageSrc: grid3, title: "VERY NUTRITIOUS",text: 'Our cuisine promotes both mental and physical well-being' },
   ];
 
   return (
