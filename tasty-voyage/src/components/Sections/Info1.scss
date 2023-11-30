@@ -4,6 +4,7 @@
 .info1-container{
     background-color: $bgPink;
     @include info-container();
+    
 
     svg{
         margin: 0;
@@ -12,7 +13,11 @@
     .info1-content{
         @include info-content();
     }
- 
+
+    
+        span{
+            color: $bgGreen;
+        }
     
     
 }

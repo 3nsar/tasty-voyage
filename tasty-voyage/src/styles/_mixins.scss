@@ -1,3 +1,5 @@
+@import "./variables";
+
 @mixin container{
     height: 100vh;
     display: flex;
@@ -11,8 +13,72 @@
 }
 
 @mixin info-content{
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+
+    img{
+        margin-right: 120px;
+    }
+    
+    h1{
+        margin-left: 120px;
+        margin-bottom: 10px;
+        font-size: 50px;
+        font-family: $font2;
+        max-width: 500px;
+        color:$colorWhite;
+    }
+
+    p{
+        font-size: 18px;
+        margin-left: 120px;
+        font-family: $font1;
+        color:$colorWhite;
+        line-height: 1.5;
+        max-width: 500px;
+    }
+    
+}
+
+// SECTION OTHER STYLE OPTION
+
+@mixin info-text-2{
+    
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 70px;
+    max-width: 600px;
+
+    h1{
+        font-size: 50px;
+        margin-bottom: 10px;
+        font-family: $font2;
+        color:$colorDark;
+    }
+
+    p{
+        font-size: 18px;
+        font-family: $font1;
+        color: $colorDark;
+        line-height: 1.5;
+    }
+}
+
+
+@mixin info-content-2{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+}
+
+@mixin info-container-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }

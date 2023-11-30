@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Rubik+Glitch&family=Vina+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Rubik+Glitch&family=Vina+Sans&display=swap");
 .info1-container {
   background-color: #ff33cc;
   min-height: 100vh;
@@ -7,8 +8,31 @@
   margin: 0;
 }
 .info1-container .info1-content {
+  min-height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.info1-container .info1-content img {
+  margin-right: 120px;
+}
+.info1-container .info1-content h1 {
+  margin-left: 120px;
+  margin-bottom: 10px;
+  font-size: 50px;
+  font-family: "Lilita One";
+  max-width: 500px;
+  color: #f1f0f0;
+}
+.info1-container .info1-content p {
+  font-size: 18px;
+  margin-left: 120px;
+  font-family: "Arial";
+  color: #f1f0f0;
+  line-height: 1.5;
+  max-width: 500px;
+}
+.info1-container span {
+  color: #4cd14c;
 }/*# sourceMappingURL=Info1.css.map */
