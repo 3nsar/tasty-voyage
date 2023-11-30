@@ -6,6 +6,7 @@ import { Navbar } from './components/Navbar/Navbar';
 import Info1 from './components/Sections/Info1';
 import Info2 from './components/Sections/Info2';
 import Info3 from './components/Sections/Info3';
+import Benefits from './components/Sections/Benefits';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Info1/>
         <Info2/>
         <Info3/>
+        <Benefits/>
     </div>
   )
 }

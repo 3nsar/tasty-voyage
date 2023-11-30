@@ -1,14 +1,18 @@
 @import "../../styles/mixins";
 @import "../../styles/variables";
 
+
 .info3-container{
     background-color: $bgWhite;
-    @include info-container();
-    @include info-content();
-
-    svg{
-        margin: 0;
-    } 
-    
-    
-}
+    @include info-container-2();
+ }
+ 
+ .info3-content{
+     @include info-content-2();
+ }
+ 
+ .info3-text{
+     @include info-text-2();
+     margin-right: 0;
+     margin-left: 70px;
+ }
