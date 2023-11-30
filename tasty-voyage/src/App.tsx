@@ -8,6 +8,7 @@ import Info2 from './components/Sections/Info2';
 import Info3 from './components/Sections/Info3';
 import Benefits from './components/Sections/Benefits';
 import About from './components/About/About';
+import Footer from './components/Footer/Footer';
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Info3/>
         <Benefits/>
         <About/>
+        <Footer/>
     </div>
   )
 }
