@@ -5,6 +5,7 @@
 
 .navbar-container {
 
+
     p{
         font-size: 12px;
     }
@@ -23,12 +24,58 @@
     transition: transform 0.3s ease;
     font-size: 50px;
     color: $colorDark;
-    background-color: $bgGreen;
+    background-color: $bgYellow;
+    flex-direction: column;
   }
 
   @keyframes rotate {
     to {
       transform: rotate(360deg);
     }
+  }
+}
+
+
+.navbar-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px;
+  max-width: 90%;
+
+  a{
+    margin-right: 150px;
+    text-decoration: none;
+    color: $colorWhite;
+    font-family: $font2;
+    font-size: 20px;
+  }
+
+  h1{
+    margin-right: 150px;
+    color: $colorWhite;
+    font-family: $font2;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border-bottom: 5px dotted $bgPink;
+    
+  }
+
+  button{
+    background-color: $bgPink;
+    color: $colorDark;
+    padding: 7px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    font-family: $font2;
+    cursor: pointer;
+  }
+
+  span{
+    color: $bgPink;
+    font-size: 35px;
   }
 }
