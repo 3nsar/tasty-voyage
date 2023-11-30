@@ -1,0 +1,14 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.about-container{
+    min-height: 100vh;
+    background-color: $bgWhite;
+    border-top-left-radius: 80%;
+    border-top-right-radius: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}

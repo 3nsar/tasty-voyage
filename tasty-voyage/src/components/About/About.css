@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Rubik+Glitch&family=Vina+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Rubik+Glitch&family=Vina+Sans&display=swap");
+.about-container {
+  min-height: 100vh;
+  background-color: #f1f0f0;
+  border-top-left-radius: 80%;
+  border-top-right-radius: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=About.css.map */
