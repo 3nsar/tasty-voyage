@@ -9,6 +9,8 @@ import Info3 from './components/Sections/Info3';
 import Benefits from './components/Sections/Benefits';
 import About from './components/About/About';
 import Footer from './components/Footer/Footer';
+import Contact from './pages/Contact';
+import Products_Navigation from './pages/Products_Navigation';
 
 const App = () => {
   return (
@@ -21,6 +23,8 @@ const App = () => {
         <Benefits/>
         <About/>
         <Footer/>
+        <Contact/>
+        <Products_Navigation />
     </div>
   )
 }
