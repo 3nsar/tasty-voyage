@@ -3,22 +3,48 @@
 
 
 .footer-container{
-    border-top: 3px solid rgba(177, 177, 177, 0.6);
-    height: 25vh;
-    background-color: $bgYellow;
+    border-top: 2px solid rgba(177, 177, 177);
+    height: 20vh;
+    background-color: $bgPink;
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-bottom:13vh;
-
-    p{
-        font-size: 18px;
-
-    }
+    justify-content: space-between;
+    margin-bottom:10vh;
 }
 
 .footer-text{
     display: flex;
     align-items: center;
     justify-content: center;
+    
+    p{
+        font-size: 18px;
+        margin-right: 35px;
+        font-family: $font2;
+    }
+
 }
+
+
+.footer-emojis{
+    display: flex;
+    align-items: center;
+
+    ul{
+        list-style: none;
+        display: flex;
+    }
+
+    li{
+        margin-left: 35px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    li:hover{
+        transition: 0.4s ease-in;
+        color: $bgPink;
+    }
+
+}
+
