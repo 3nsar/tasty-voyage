@@ -3,13 +3,13 @@
 
 
 .footer-container{
-    border-top: 2px solid rgba(177, 177, 177);
+    border-top: 3px solid gray;
     height: 20vh;
     background-color: $bgPink;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom:10vh;
+    /*margin-bottom:10vh;*/
 }
 
 .footer-text{
