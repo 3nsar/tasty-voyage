@@ -3,4 +3,31 @@
 
 .products-container{
     min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $colorWhite;
+    font-size: 70px;
+    font-family: $font2;
+
 }
+
+ul{
+    list-style: none;
+}
+
+li{
+    cursor: pointer;
+}
+li:hover{
+    color: $bgPink;
+    transition: 0.3s ease-in;
+
+    .products-container{
+        background-color: red;
+    }
+   
+}
+
+
+

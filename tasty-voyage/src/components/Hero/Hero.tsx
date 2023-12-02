@@ -11,7 +11,7 @@ const Hero = () => {
       <img src={food} alt="food" />
       <h1 className='hero-text-infront'>VOYAGE</h1>
       <div className="banner-bottom">
-      <Banner/>
+     {/* <Banner/> * */}
       </div>
     </div>
     
