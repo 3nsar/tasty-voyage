@@ -11,20 +11,23 @@ import About from './components/About/About';
 import Footer from './components/Footer/Footer';
 import Contact from './pages/Contact';
 import Products_Navigation from './pages/Products_Navigation';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+
 
 const App = () => {
   return (
     <div className='App'>
-        <Navbar/>
-        <Hero/>
-        <Info1/>
-        <Info2/>
-        <Info3/>
-        <Benefits/>
-        <About/>
-        <Footer/>
-        <Contact/>
-        <Products_Navigation />
+      
+        <Router >
+         <Navbar />
+      <Routes>
+       <Route path="/" element={ <Home/>}/> 
+       <Route path="/products" element={<Products_Navigation />}/> 
+       <Route path="/contact" element={<Contact /> }/>
+      </Routes> 
+      <Footer/> 
+    </Router>
     </div>
   )
 }
