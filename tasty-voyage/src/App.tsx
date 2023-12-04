@@ -18,16 +18,15 @@ import Home from './pages/Home';
 const App = () => {
   return (
     <div className='App'>
-      
-        <Router >
-         <Navbar />
-      <Routes>
-       <Route path="/" element={ <Home/>}/> 
-       <Route path="/products" element={<Products_Navigation />}/> 
-       <Route path="/contact" element={<Contact /> }/>
-      </Routes> 
+     <Router >
+      <Navbar />
+       <Routes>
+        <Route path="/" element={ <Home/>}/> 
+        <Route path="/products" element={<Products_Navigation />}/> 
+        <Route path="/contact" element={<Contact /> }/>
+       </Routes> 
       <Footer/> 
-    </Router>
+     </Router>
     </div>
   )
 }
