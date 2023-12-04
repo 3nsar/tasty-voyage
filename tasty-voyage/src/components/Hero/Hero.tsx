@@ -1,7 +1,7 @@
 import React from 'react';
 import './Hero.scss'; // Import the hero.scss file
 import '../Banner/Banner.scss'; // Import the hero.scss file
-import food from '../../images/food/food-hero.png';
+import food from '../../images/food/herroo-img.png';
 import Banner from '../Banner/Banner';
 
 const Hero = () => {

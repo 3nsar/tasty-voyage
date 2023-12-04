@@ -1,0 +1,27 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+
+.accordian-section-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 800px;
+    
+}
+
+.accordian-section{
+    cursor: pointer;
+    height: 20vh;
+    border: 1px solid gray;
+    max-width: 800px;
+p{
+    padding: 5px;
+    font-size: 18px;
+}
+
+&:hover{
+    background-color: #203520;
+}
+
+}
