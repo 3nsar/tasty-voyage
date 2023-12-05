@@ -1,28 +1,37 @@
+import './Products_Navigation.scss';
+import plants from "../images/food/plants-about.jpg"
+import burger from "../images/food/burger.jpg"
+import bowl from "../images/food/bowl.jpg"
+import beans from "../images/food/beans.jpg"
+import nuggets from "../images/food/nuggets.jpg"
+
 import React, { useState } from 'react';
 import './Products_Navigation.scss';
+import ProductBurger from './ProductBurger';
 
 const Products_Navigation = () => {
-  const [backgroundColor, setBackgroundColor] = useState(''); // State to manage background color
+  const [backgroundImage, setBackgroundImage] = useState('');
 
-  const handleMouseOver = (index:any) => {
-    // Define your color mapping based on the index
-    const colorMap = ['', 'red', 'green', 'yellow', 'purple'];
-    setBackgroundColor(colorMap[index] || ''); // Default to an empty string if index is out of range
+  const handleMouseOver = (image:string) => {
+    setBackgroundImage(image);
   };
 
   const handleMouseOut = () => {
-    setBackgroundColor(''); // Reset background color when mouse leaves the li
+    setBackgroundImage('');
   };
 
   return (
-    <div className='products-container' style={{ backgroundColor: backgroundColor }}>
+    <>
+    <div className='products-container' style={{ backgroundImage: `url(${backgroundImage})` }}>
       <ul>
-        <li onMouseOver={() => handleMouseOver(1)} onMouseOut={handleMouseOut}>BURGER</li>
-        <li onMouseOver={() => handleMouseOver(2)} onMouseOut={handleMouseOut}>PIECES</li>
-        <li onMouseOver={() => handleMouseOver(3)} onMouseOut={handleMouseOut}>MINCE</li>
-        <li onMouseOver={() => handleMouseOver(4)} onMouseOut={handleMouseOut}>FILLETS</li>
+        <li onMouseOver={() => handleMouseOver(burger)} onMouseOut={handleMouseOut}>BURGER</li>
+        <li onMouseOver={() => handleMouseOver(bowl)} onMouseOut={handleMouseOut}>PIECES</li>
+        <li onMouseOver={() => handleMouseOver(beans)} onMouseOut={handleMouseOut}>BEANS</li>
+        <li onMouseOver={() => handleMouseOver(nuggets)} onMouseOut={handleMouseOut}>FILLETS</li>
       </ul>
-    </div>
+    </div> 
+    <ProductBurger/>
+    </>
   );
 };
 

@@ -3,9 +3,12 @@ import React, { useEffect, useState } from 'react';
 import './Navbar.scss';
 import { RiPlantFill } from "react-icons/ri";
 import { GiCook } from "react-icons/gi";
+import { useNavigate } from 'react-router'
+
 
 export const Navbar = () => {
   const [rotation, setRotation] = useState(0);
+  const navigate = useNavigate()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,10 +27,10 @@ export const Navbar = () => {
   return (
     <div className='navbar-container'>
       <div className='navbar-content'>
-        <a href="#">ABOUT</a>
-        <a href="#">PRODUCTS</a>
-        <h1>Tasty Voyage <span><GiCook/></span></h1>
-        <button>CONTACT US</button>
+        <a onClick={()=>navigate('/')}>ABOUT</a>
+        <a onClick={()=>navigate('/products')}>RECIPES</a>
+        <h1 onClick={()=>navigate('/')}>Tasty Voyage <span><GiCook/></span></h1>
+        <button onClick={()=>navigate('/contact')}>CONTACT US</button>
       </div>
       <div className='circle' style={{ transform: `rotate(${rotation}deg)` }}>
       <svg width="307" height="306" viewBox="0 0 307 306" fill="none" xmlns="http://www.w3.org/2000/svg">

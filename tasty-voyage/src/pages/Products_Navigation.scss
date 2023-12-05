@@ -9,7 +9,10 @@
     color: $colorWhite;
     font-size: 70px;
     font-family: $font2;
-
+    background-repeat: no-repeat;
+    background-size: cover; /* Adjust the background size as needed */
+  background-position: center;
+  
 }
 
 ul{
@@ -18,15 +21,12 @@ ul{
 
 li{
     cursor: pointer;
+    color: $colorWhite;
 }
+
 li:hover{
     color: $bgPink;
     transition: 0.3s ease-in;
-
-    .products-container{
-        background-color: red;
-    }
-   
 }
 
 

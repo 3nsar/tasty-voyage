@@ -1,4 +1,3 @@
-// Navbar.scss
 
 @import "../../styles/mixins";
 @import "../../styles/variables";
@@ -48,7 +47,13 @@
     color: $colorWhite;
     font-family: $font2;
     font-size: 20px;
+    cursor: pointer;
+
+    &:hover{
+      color: $bgPink;
+    }
   }
+  
 
   h1{
     margin-right: 150px;
@@ -59,6 +64,7 @@
     display: flex;
     align-items: center;
     border-bottom: 5px dotted $bgPink;
+    cursor: pointer;
     
   }
 
