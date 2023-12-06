@@ -9,9 +9,7 @@ const ProductBurger = () => {
         {
             "title":"INGREDIENTS",
             "content": 
-            `Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-            Sed perspiciatis excepturi quod mollitia, commodi aliquid quidem 
-            ipsum unde earum sint autem odit atque. Modi aut hic amet perferendis, id nihil?`
+            `Water, Textured Vegetable Protein (28%) (Pea Protein Concentrate, Salt).`
         },
         {
             "title":"STORAGE",
