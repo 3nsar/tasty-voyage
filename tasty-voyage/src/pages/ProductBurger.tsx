@@ -14,16 +14,12 @@ const ProductBurger = () => {
         {
             "title":"STORAGE",
             "content": 
-            `Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-            Sed perspiciatis excepturi quod mollitia, commodi aliquid quidem 
-            ipsum unde earum sint autem odit atque. Modi aut hic amet perferendis, id nihil?`
+            `Keep frozen at -18°C or cooler. Important: If food has thawed, do not refreeze.`
         },
         {
             "title":"COOKING INSTRUCTIONS",
             "content": 
-            `Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-            Sed perspiciatis excepturi quod mollitia, commodi aliquid quidem 
-            ipsum unde earum sint autem odit atque. Modi aut hic amet perferendis, id nihil?`
+            `Cooking Guidelines from Frozen: Remove all packaging. Hob: Place a small amount of cooking oil into pan. Once oil is hot add mince to pan and fry over a medium heat for 3-4 minutes. Cooking times may vary. Cook throughout to a minimum temperature of 75°C for 30 seconds or apply national standards.`
         },
 
     ]
