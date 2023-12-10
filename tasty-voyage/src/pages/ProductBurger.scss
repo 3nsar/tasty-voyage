@@ -3,7 +3,7 @@
 
 .product-burger-container{
     color: $colorWhite;
-    min-height: 50vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,7 +63,7 @@
     display: flex;
     align-items: center;
     img{
-        height: 850px;
+        height: 350px;
         margin-left: 50px;
         border-radius: 20px;
     }
