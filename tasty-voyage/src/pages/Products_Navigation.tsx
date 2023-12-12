@@ -9,7 +9,7 @@ import React, { useState,useEffect } from 'react';
 import './Products_Navigation.scss';
 import ProductBurger from './ProductBurger';
 
-/*const Products_Navigation = () => {
+const Products_Navigation = () => {
   const [backgroundImage, setBackgroundImage] = useState('');
 
   const handleMouseOver = (image:string) => {
@@ -35,41 +35,4 @@ import ProductBurger from './ProductBurger';
   );
 };
 
-export default Products_Navigation; */
-
-const Products_Navigation = () => {
-  const [backgroundImage, setBackgroundImage] = useState('');
-
-  const handleMouseOver = (image) => {
-    setBackgroundImage(image);
-  };
-
-  const handleMouseOut = () => {
-    setBackgroundImage('');
-  };
-
-  useEffect(() => {
-    // Preload images when the component mounts
-    const preloadImages = [burger, bowl, beans, nuggets];
-    preloadImages.forEach((image) => {
-      new Image().src = image;
-    });
-  }, []);
-
-  return (
-    <>
-      <div className='products-container' style={{ backgroundImage: `url(${backgroundImage})` }}>
-        <ul>
-          <li onMouseOver={() => handleMouseOver(burger)} onMouseOut={handleMouseOut}>BURGER</li>
-          <li onMouseOver={() => handleMouseOver(bowl)} onMouseOut={handleMouseOut}>PIECES</li>
-          <li onMouseOver={() => handleMouseOver(beans)} onMouseOut={handleMouseOut}>BEANS</li>
-          <li onMouseOver={() => handleMouseOver(nuggets)} onMouseOut={handleMouseOut}>FILLETS</li>
-        </ul>
-      </div>
-      <ProductBurger />
-    </>
-  );
-};
-
-export default Products_Navigation;
-
+export default Products_Navigation; 
